@@ -1,11 +1,11 @@
 #include <iostream>
 #include "lib.h"
 using namespace std;
+
 int main(){
-    int num;
-    bool val;
-    cout<<"inserisci numero intero: ";cin>>num;
-    val=numeriprimi(2,num);
+    int a=0, b=2;
+    cin>>a;
+    bool val=numeriprimi(a,b);
     if(val) {
         cout<<"Numero primo"<<endl;
     } else {
