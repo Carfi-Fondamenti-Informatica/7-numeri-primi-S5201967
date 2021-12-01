@@ -1,11 +1,11 @@
 #include "lib.h"
-bool numeriprimi(int i, int n) {
+bool numeriprimi(int n, int i) {
     int rest;
     if (n > 1) {
         if (i < n) {
             rest = n % i;
             if (rest != 0) {
-                return numeriprimi(i + 1, n);
+                return numeriprimi(n, i+1);
             } else {
                 return false;
             }
